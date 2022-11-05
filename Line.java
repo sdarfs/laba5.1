@@ -37,4 +37,38 @@ public class Line {
     public Point getEndPoint() {
         return endPoint;
     }
+
+    static void Arr2(double a[][],int r,int c){
+        int i,j;
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            {
+                a[i][j]=i+j;
+            }
+        }
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            {
+                System.out.print(a[i][j]);
+            }
+        }
+
+    }
+    static void Arr1(double a[],int r){
+        int i,j;
+        for(i=0;i<r;i++)
+        {
+                a[i]=i;
+        }
+        for(i=0;i<r;i++)
+        {
+
+                System.out.print(a[i]);
+        }
+
+    }
+
+
 }

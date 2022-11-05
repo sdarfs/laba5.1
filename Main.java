@@ -1,6 +1,10 @@
 public class Main {
+    final static int R=2;
+    final static int C=3;
+
 
     public static void main(String[] args) throws Ex {
+        //проверка исключений строковых, отрицательных и нулевых значений
         Triangle triangle = new Triangle();
         System.out.print("\nEnter the coordinates of the first, the second and the third points: ");
         triangle.input();
@@ -10,6 +14,15 @@ public class Main {
         line3 = triangle.lineLength(3);
         Circle circle;
         Circle.area_triangle_inside(line1,line2,line3);
+        //двумерный массив - arr2
+        double [][] A=new double [R][C];
+        Line.Arr2(A,R,C);
+
+        //одномерный массив - arr1
+        double[] a = new double[R];
+        Line.Arr1(a,R);
+
+
 
 
 
