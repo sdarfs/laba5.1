@@ -14,12 +14,16 @@ public class Main {
         line3 = triangle.lineLength(3);
         Circle circle;
         Circle.area_triangle_inside(line1,line2,line3);
+        System.out.print('\n');
+
         //двумерный массив - arr2
-        double [][] A=new double [R][C];
+        System.out.print("Двумерный массив: \n");
+        int [][] A=new int [R][C];
         Line.Arr2(A,R,C);
 
         //одномерный массив - arr1
-        double[] a = new double[R];
+        System.out.print("Одномерный массив: \n");
+        int [] a = new int [R];
         Line.Arr1(a,R);
 
 

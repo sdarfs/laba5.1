@@ -57,7 +57,7 @@ public class Circle {
         while(p==0){
             try{
                 p = 1;
-                System.out.print("Введите радиус окружности:");
+                System.out.print("\nВведите радиус окружности:");
                 Scanner scanner = new Scanner(System.in);
                 radius = scanner.nextDouble();
                 if (radius < 0.0)
@@ -66,7 +66,7 @@ public class Circle {
                     throw new Ex(2);
             }
             catch(Exception Ex){
-                System.out.printf("Ошибка ввода");
+                System.out.printf("\nОшибка ввода");
                 p = 0;
             }
         }

@@ -38,7 +38,7 @@ public class Line {
         return endPoint;
     }
 
-    static void Arr2(double a[][],int r,int c){
+    static void Arr2(int a[][],int r,int c){
         int i,j;
         for(i=0;i<r;i++)
         {
@@ -51,24 +51,25 @@ public class Line {
         {
             for(j=0;j<c;j++)
             {
-                System.out.print(a[i][j]);
-            }
+                    System.out.print(a[i][j] + "\t");
+                }
+                System.out.println();
         }
 
     }
-    static void Arr1(double a[],int r){
+    static void Arr1(int a[],int r){
         int i,j;
         for(i=0;i<r;i++)
         {
                 a[i]=i;
         }
-        for(i=0;i<r;i++)
-        {
 
-                System.out.print(a[i]);
-        }
+        for ( i = 0; i < a.length; i++) {
+                System.out.print(a[i] + "\t");
+            }
 
     }
+
 
 
 }
